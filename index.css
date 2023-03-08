@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+  background-color: #2c2c2c38;
+}
+
+h1 {
+  font-family: "Comfortaa";
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1100px auto;
+  /* grid-gap: 10px; */
+  /* justify-items: center;
+  align-items: center; */
+}
+
+/* ----------Sticky Navigation bar ---------------*/
+header {
+  grid-column: 1/4;
+  background-color: rgb(245, 245, 245);
+  margin: 0 2px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0 1.5em;
+}
+
+.nav li {
+  padding: 1.5em;
+  margin: 0 1.2em;
+}
+
+/*---------Hero---------------------------*/
+
+#hero {
+  grid-column: 1/4;
+  width: 100vw;
+  margin: 8em 0 12em 0;
+  justify-self: center;
+}
+
+#hero img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*----------About------------------------*/
+
+#about {
+  grid-column: 2/3;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7em;
+  width: 100%;
+}
+
+#about div {
+  width: 300%;
+  margin: 2em;
+}
+#about article {
+  font-size: 17px;
+  padding: 2em 2em 2em 0;
+}
+
+#about img {
+  max-width: 100%;
+}
+
+/*------------Projects----------------*/
+
+main {
+  grid-column: 2/3;
+}
+
+.flexing-container {
+  background-color: #2c2c2c;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; /*main axis*/
+  align-items: center; /*cross axis*/
+  overflow: hidden;
+  /* align-content: flex-end; */
+}
+
+.flexing-container h1 {
+  color: white;
+  font-weight: lighter;
+  flex-grow: 1;
+  text-align: center;
+}
+.card {
+  max-width: 50%;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card:hover {
+  opacity: 0.55;
+}
+
+/*-----------------------Contact me----------------------*/
+
+#contact-me-container {
+  grid-column: 1/4;
+  background-color: #2c2c2c;
+  margin-top: 7em;
+}
+
+#contact-me {
+  margin: 10em auto;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="email"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+#email-submit-button {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+#email-submit-button:hover {
+  background-color: #45a049;
+}

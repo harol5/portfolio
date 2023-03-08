@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <nav>
+          <ul class="nav">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="hero">
+        <img src="./img/hero-resized.png" />
+      </section>
+      <section id="about">
+        <div>
+          <img src="./img/me.jpg" />
+        </div>
+        <article>
+          <h1>About</h1>
+          <p>
+            Hey there, My name is harol rojas and thank you for visiting my
+            portfolio
+            <br />
+            A little about me: I was born and raised in Colombia, I moved to the
+            United States in 2016, since then, I’ve been and many jobs and
+            experiences that have thought me that to accomplish anything in life
+            you need commitment, persistency, and dedication, now Im in this
+            journey to become a Software Engineer and Im enjoying every single
+            minute of it, of course, not an easy path but the greatest things in
+            life don't come easy and Im here for the long run.
+            <br />
+            What you will find find here are projects that I’ve done through my
+            years in college, I’ve implemented many technologies like HTML, CSS,
+            React.js, Java, PostgresSQL, Jenkins, Docker, Bash, Kubernetes and
+            some others.
+          </p>
+        </article>
+      </section>
+      <main>
+        <div class="flexing-container" id="projects">
+          <h1>Web Development</h1>
+          <div class="card">
+            <button id="myBtn">
+              <img src="./img/jazz-corner.png" />
+            </button>
+          </div>
+          <div class="card">
+            <button id="myBtn2">
+              <img src="./img/planetarium.png" />
+            </button>
+          </div>
+          <div class="card">
+            <button id="myBtn3">
+              <img src="./img/craigslist.png" />
+            </button>
+          </div>
+        </div>
+      </main>
+      <section id="contact-me-container">
+        <div id="contact-me">
+          <h1>Contact Me</h1>
+          <form action="https://formsubmit.co/hrcode95@gmail.com" method="POST">
+            <p>
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required />
+            </p>
+            <p>
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required />
+            </p>
+            <p>
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                style="height: 200px"
+                required
+              ></textarea>
+            </p>
+            <button type="submit" id="email-submit-button">Send</button>
+          </form>
+        </div>
+      </section>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">Jazz' Corner</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                This web app intends to showcase music, shows and places related
+                to jazz specifically in NYC. The website started as simple
+                static site but I decided to rebuild it and use some modern
+                technologies such as React.js, Axios, Express.js, Bootstrap,
+                Heroku and APIs for dynamic data. The APIs I used for this web
+                app were, Spotify Web and Yelp. This project brought to me new
+                challenges but I learned a lot from it and gave me the
+                opportunity to implement React. this is version 0.0.1 and Im
+                looking forward to implementing new features that I already have
+                in mind that for sure will increase my skills in different areas
+                of web development.
+              </p>
+              <a href="https://jazzc.herokuapp.com/" target="_blank"
+                >Go to website</a
+              >
+              <a href="https://github.com/harol5/jazz-corner" target="_blank"
+                >Github Repository</a
+              >
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">Planetarium</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                Planetarium is a web app where users can create and save planets
+                and moons into a database. Each planet and moon will be
+                associated with the user that created it and each user will have
+                their own account which is required for making use of the app. I
+                built this app to put in practice some technologies that I
+                learned over the past months such as Spring boot, Jenkins,
+                Docker, Kubernetes, Prometheus, Grafana, and Google Cloud
+                Platform. The web app has an API, CI/CD pipeline, Observation
+                tools (Prometheus, Grafana) and a Kubernetes cluster. At the
+                moment the back-end and deployment are functional, Im currently
+                working in the front-end using React.js. please check my GitHub
+                repository for more details.
+              </p>
+              <a href="https://github.com/harol5/planetarium" target="_blank"
+                >Github Repository</a
+              >
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">Craigslist</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                This was the first website I created, the goal of this project
+                was to recreate an existing web page with a friendlier user
+                interface only using vanilla html and css. I chose craigslist
+                because of its vast range of options and chose the most use ones
+                and create a interface easier to navigate.
+              </p>
+              <a
+                href="https://herp05.github.io/midterm/index.html"
+                target="_blank"
+                >Go to website</a
+              >
+              <a href="https://github.com/herp05/midterm" target="_blank"
+                >Github Repository</a
+              >
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#myBtn").click(function () {
+          $("#myModal").modal({ backdrop: true });
+        });
+        $("#myBtn2").click(function () {
+          $("#myModal2").modal({ backdrop: true });
+        });
+        $("#myBtn3").click(function () {
+          $("#myModal3").modal({ backdrop: true });
+        });
+      });
+    </script>
+  </body>
+</html>
