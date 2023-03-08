@@ -179,3 +179,9 @@ input[type="email"] {
 #email-submit-button:hover {
   background-color: #45a049;
 }
+
+/*----------Thanks Page------------*/
+#thanks-page {
+  margin: 10em auto;
+  width: 50%;
+}
