@@ -19,16 +19,19 @@
   </head>
   <body>
     <div class="grid-container">
-      <header>
-        <nav>
-          <ul class="nav">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-me">Contact me</a></li>
-          </ul>
-        </nav>
-      </header>
+      <nav>
+        <div class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+      </nav>
       <section id="hero">
         <img src="./img/hero-resized.png" />
       </section>
@@ -243,6 +246,11 @@
         $("#myBtn3").click(function () {
           $("#myModal3").modal({ backdrop: true });
         });
+      });
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navBar = document.getElementsByClassName("nav")[0];
+      toggleButton.addEventListener("click", () => {
+        navBar.classList.toggle("active");
       });
     </script>
   </body>

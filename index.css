@@ -26,7 +26,7 @@ button {
 }
 
 /* ----------Sticky Navigation bar ---------------*/
-header {
+nav {
   grid-column: 1/4;
   background-color: rgb(245, 245, 245);
   margin: 0 0.3em;
@@ -46,6 +46,22 @@ header {
 .nav li {
   padding: 1.5em;
   margin: 0 1.2em;
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85px;
+  height: 76px;
+  margin: 1.8em;
+}
+
+.toggle-button .bar {
+  height: 8px;
+  width: 100%;
+  background-color: #2c2c2cfd;
+  border-radius: 10px;
 }
 
 /*---------Hero---------------------------*/
@@ -187,14 +203,41 @@ input[type="email"] {
 /*-----------Tablet Style------------------------------*/
 
 @media (max-width: 768px) {
-  #contact-me-container {
-    /* background-color: #bb0a0a; */
+  .nav li {
+    font-size: 2.3rem;
+  }
+  #about article {
+    font-size: 20px;
   }
 }
 
 /*-----------Phone Style-----------------------------------*/
 
-@media (max-width: 425px) {
+@media (max-width: 550px) {
+  /*--------NavBar--------*/
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .nav {
+    flex-direction: column;
+    display: none;
+    align-self: center;
+  }
+  .nav li {
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .nav.active {
+    display: flex;
+  }
   /*---------Hero---------*/
   #hero {
     width: auto;
@@ -213,11 +256,17 @@ input[type="email"] {
   }
   #about div {
     width: auto;
-    margin: 2em;
+    margin: 5em;
+    margin-bottom: 0;
   }
   #about article {
-    font-size: 35px;
+    font-size: 4.5rem;
     padding: 1em;
+  }
+  #about article h1 {
+    text-align: center;
+    font-size: 8.2rem;
+    margin: 0.3em 0;
   }
   #about img {
     max-width: 100%;
