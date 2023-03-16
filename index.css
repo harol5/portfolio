@@ -209,6 +209,9 @@ input[type="email"] {
   #about article {
     font-size: 20px;
   }
+  #thanks-page {
+    text-align: center;
+  }
 }
 
 /*-----------Phone Style-----------------------------------*/
