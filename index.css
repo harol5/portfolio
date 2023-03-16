@@ -139,6 +139,10 @@ main {
   opacity: 0.55;
 }
 
+.modal-content a {
+  margin-right: 0.8em;
+}
+
 /*-----------------------Contact me----------------------*/
 
 #contact-me-container {
@@ -301,5 +305,22 @@ input[type="email"] {
   }
   #contact-me h1 {
     font-size: 50px;
+  }
+  /*----Modals--------*/
+  .modal-dialog {
+    font-size: 4.5rem;
+    top: 15%;
+    padding: 1em;
+    margin: 10px;
+  }
+  .modal-dialog h4 {
+    font-size: 5.5rem;
+  }
+  .modal-content {
+    padding: 1em;
+  }
+  .modal-content button {
+    font-size: 1em;
+    padding: 1em;
   }
 }
