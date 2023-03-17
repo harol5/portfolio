@@ -47,6 +47,7 @@ nav {
   padding: 1.5em;
   margin: 0 1.2em;
 }
+
 /*--reponsive nav item--*/
 .logo {
   display: none;
@@ -237,11 +238,8 @@ input[type="email"] {
   nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: end;
   }
   .logo-menu-flex-container {
-    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -279,8 +277,8 @@ input[type="email"] {
   }
   /*----------About----------*/
   #about {
-    display: block;
     margin: 0;
+    flex-direction: column;
   }
   #about div {
     width: auto;
@@ -304,7 +302,6 @@ input[type="email"] {
   /*-------Projects--------*/
   .flexing-container {
     flex-direction: column;
-    /* align-content: flex-end; */
   }
   .flexing-container h1 {
     margin: 2em auto;
