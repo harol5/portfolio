@@ -35,7 +35,7 @@ nav {
   z-index: 1;
 }
 
-.nav {
+.nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,18 +43,26 @@ nav {
   padding: 0 1.5em;
 }
 
-.nav li {
+.nav-links li {
   padding: 1.5em;
   margin: 0 1.2em;
+}
+/*--reponsive nav item--*/
+.logo {
+  display: none;
+  margin: 0.3em;
+  margin-left: 2em;
+  width: 11.8%;
 }
 
 .toggle-button {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 85px;
-  height: 76px;
-  margin: 1.8em;
+  width: 82px;
+  height: 73px;
+  margin: 2em;
+  padding: 0.3em;
 }
 
 .toggle-button .bar {
@@ -183,6 +191,10 @@ input[type="email"] {
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+#message {
+  height: 200px;
+}
+
 /* Style the submit button with a specific background color etc */
 #email-submit-button {
   background-color: #2c2c2c;
@@ -207,7 +219,7 @@ input[type="email"] {
 /*-----------Tablet Style------------------------------*/
 
 @media (max-width: 768px) {
-  .nav li {
+  .nav-links li {
     font-size: 2.3rem;
   }
   #about article {
@@ -225,24 +237,33 @@ input[type="email"] {
   nav {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: end;
+  }
+  .logo-menu-flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    display: block;
   }
   .toggle-button {
     display: flex;
   }
-  .nav {
-    flex-direction: column;
+  .nav-links {
     display: none;
+    flex-direction: column;
     align-self: center;
   }
-  .nav li {
+  .nav-links li {
     width: 100%;
     text-align: center;
     font-size: 6rem;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
-  .nav.active {
+  .nav-links.active {
     display: flex;
   }
   /*---------Hero---------*/
@@ -291,25 +312,30 @@ input[type="email"] {
   }
   .card {
     max-width: 100%;
-    margin: 1em 1em;
+    margin: 2em;
   }
   /*-----Contact me---------*/
   #contact-me-container {
     margin-top: 0;
+    background-color: transparent;
   }
   #contact-me {
     width: auto;
     display: block;
-    margin: auto;
+    margin: 8em 2em;
     font-size: 40px;
   }
   #contact-me h1 {
-    font-size: 50px;
+    font-size: 10rem;
+    margin-bottom: 4rem;
+  }
+  #message {
+    height: 500px;
   }
   /*----Modals--------*/
   .modal-dialog {
     font-size: 4.5rem;
-    top: 15%;
+    top: 13%;
     padding: 1em;
     margin: 10px;
   }

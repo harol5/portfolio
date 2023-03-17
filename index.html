@@ -20,12 +20,15 @@
   <body>
     <div class="grid-container">
       <nav>
-        <div class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <div class="logo-menu-flex-container">
+          <img src="./img/logo.png" class="logo" />
+          <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
-        <ul class="nav">
+        <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -103,7 +106,6 @@
                 id="message"
                 name="message"
                 placeholder="Your Message"
-                style="height: 200px"
                 required
               ></textarea>
             </p>
@@ -248,9 +250,9 @@
         });
       });
       const toggleButton = document.getElementsByClassName("toggle-button")[0];
-      const navBar = document.getElementsByClassName("nav")[0];
+      const navLinks = document.getElementsByClassName("nav-links")[0];
       toggleButton.addEventListener("click", () => {
-        navBar.classList.toggle("active");
+        navLinks.classList.toggle("active");
       });
     </script>
   </body>
