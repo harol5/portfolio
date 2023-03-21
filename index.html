@@ -16,10 +16,14 @@
       href="https://fonts.googleapis.com/css?family=Comfortaa"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <div class="grid-container">
-      <nav>
+      <nav class="nav-bar">
         <div class="logo-menu-flex-container">
           <img src="./img/logo.png" class="logo" />
           <div class="toggle-button">
@@ -35,9 +39,22 @@
           <li><a href="#contact-me">Contact me</a></li>
         </ul>
       </nav>
-      <section id="hero">
-        <img src="./img/hero-resized.png" />
-      </section>
+      <header id="hero">
+        <article class="call-for-action animate__animated animate__fadeInUp">
+          <h1>HR Code</h1>
+          <h3>A better way to make your Web App a reality</h3>
+          <p>
+            In HR code we deliver the best quality and innovation to make your
+            dream web application a reality, we use a varity of technologies
+            such as React.js, Express.js, Css3, Kubernetes, Docker, Spring Boot
+            and we up to date with of the best practices in scalability and
+            fault tolerance practices.
+          </p>
+        </article>
+        <div class="image-container animate__animated animate__fadeInUp">
+          <img src="./img/hero-resized.png" />
+        </div>
+      </header>
       <section id="about">
         <div>
           <img src="./img/me.jpg" />
@@ -253,6 +270,15 @@
       const navLinks = document.getElementsByClassName("nav-links")[0];
       toggleButton.addEventListener("click", () => {
         navLinks.classList.toggle("active");
+      });
+
+      const navBar = document.querySelector(".nav-bar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 150) {
+          navBar.classList.add("nav-scroll");
+        } else if (window.scrollY <= 150) {
+          navBar.classList.remove("nav-scroll");
+        }
       });
     </script>
   </body>
