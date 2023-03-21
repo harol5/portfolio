@@ -276,6 +276,9 @@ input[type="email"] {
 /*-----------Phone Style-----------------------------------*/
 
 @media (max-width: 600px) {
+  body {
+    background-color: rgba(0, 0, 0, 0.181);
+  }
   /*--------NavBar--------*/
   nav {
     display: flex;
@@ -314,7 +317,7 @@ input[type="email"] {
     text-align: center;
     align-content: center;
     justify-self: center;
-    padding: 60rem 0;
+    padding: 58rem 0;
   }
   .call-for-action {
     width: auto;
