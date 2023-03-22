@@ -103,6 +103,7 @@ nav a {
 
 .call-for-action {
   width: 50%;
+  animation: fade-in-up 2.5s ease-in-out;
   /* flex-basis: 0;
   flex-grow: 1; */
 }
@@ -113,12 +114,25 @@ nav a {
 
 .image-container {
   width: 50%;
+  animation: fade-in-up 3s ease-in-out;
   /* flex-basis: 0;
   flex-grow: 1; */
 }
 
 #hero img {
   width: 90%;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*----------About------------------------*/
@@ -130,6 +144,7 @@ nav a {
   justify-content: center;
   width: 100%;
   margin: 10em 0;
+  opacity: 0;
 }
 
 #about div {
@@ -143,6 +158,26 @@ nav a {
 
 #about img {
   max-width: 100%;
+}
+
+@keyframes fade-in-front {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in-front {
+  animation: fade-in-front 3s ease-in-out forwards alternate;
+}
+
+.fade-out-back {
+  animation: fade-in-front 3s ease-in-out alternate-reverse;
 }
 
 /*------------Projects----------------*/

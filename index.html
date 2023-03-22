@@ -40,7 +40,7 @@
         </ul>
       </nav>
       <header id="hero">
-        <article class="call-for-action animate__animated animate__fadeInUp">
+        <article class="call-for-action">
           <h1>HR Code</h1>
           <h3>A better way to make your Web App a reality</h3>
           <p>
@@ -51,11 +51,11 @@
             fault tolerance practices.
           </p>
         </article>
-        <div class="image-container animate__animated animate__fadeInUp">
+        <div class="image-container">
           <img src="./img/hero-resized.png" />
         </div>
       </header>
-      <section id="about">
+      <section id="about" class="about-section">
         <div>
           <img src="./img/me.jpg" />
         </div>
@@ -254,32 +254,6 @@
         </div>
       </div>
     </div>
-    <script>
-      $(document).ready(() => {
-        $("#myBtn").click(() => {
-          $("#myModal").modal({ backdrop: true });
-        });
-        $("#myBtn2").click(() => {
-          $("#myModal2").modal({ backdrop: true });
-        });
-        $("#myBtn3").click(() => {
-          $("#myModal3").modal({ backdrop: true });
-        });
-      });
-      const toggleButton = document.getElementsByClassName("toggle-button")[0];
-      const navLinks = document.getElementsByClassName("nav-links")[0];
-      toggleButton.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-
-      const navBar = document.querySelector(".nav-bar");
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 150) {
-          navBar.classList.add("nav-scroll");
-        } else if (window.scrollY <= 150) {
-          navBar.classList.remove("nav-scroll");
-        }
-      });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
