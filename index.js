@@ -31,5 +31,3 @@ window.addEventListener("scroll", () => {
     about.classList.add("fade-in-front");
   }
 });
-
-screen.orientation.lock("portrait-primary");

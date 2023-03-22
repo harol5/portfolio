@@ -347,12 +347,12 @@ input[type="email"] {
   /*---------Hero---------*/
   #hero {
     /* display: block; */
-    height: 220rem;
+    height: 195rem;
     gap: 6rem;
     text-align: center;
     align-content: center;
     justify-self: center;
-    padding: 58rem 0;
+    padding: 0;
   }
   .call-for-action {
     width: auto;
