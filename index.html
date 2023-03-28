@@ -10,6 +10,7 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js" type="module" async></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./index.css" />
     <link
@@ -55,31 +56,33 @@
           <img src="./img/hero-resized.png" />
         </div>
       </header>
-      <section id="about" class="about-section">
-        <div>
-          <img src="./img/me.jpg" />
-        </div>
-        <article>
-          <h1>About</h1>
-          <p>
-            Hey there, My name is Harol Rojas and thank you for visiting my
-            portfolio
-            <br />
-            A little about me: I was born and raised in Colombia, I moved to the
-            United States in 2016, since then, I’ve been and many jobs and
-            experiences that have thought me that to accomplish anything in life
-            you need commitment, persistency, and dedication, now Im in this
-            journey to become a Software Engineer and Im enjoying every single
-            minute of it, of course, not an easy path but the greatest things in
-            life don't come easy and Im here for the long run.
-            <br />
-            What you will find find here are projects that I’ve done through my
-            years in college, I’ve implemented many technologies like HTML, CSS,
-            React.js, Java, PostgresSQL, Jenkins, Docker, Bash, Kubernetes and
-            some others.
-          </p>
-        </article>
-      </section>
+      <div class="scroll-about">
+        <section id="about" class="about-section">
+          <div>
+            <img src="./img/me.jpg" />
+          </div>
+          <article>
+            <h1>About</h1>
+            <p>
+              Hey there, My name is Harol Rojas and thank you for visiting my
+              portfolio
+              <br />
+              A little about me: I was born and raised in Colombia, I moved to
+              the United States in 2016, since then, I’ve been and many jobs and
+              experiences that have thought me that to accomplish anything in
+              life you need commitment, persistency, and dedication, now Im in
+              this journey to become a Software Engineer and Im enjoying every
+              single minute of it, of course, not an easy path but the greatest
+              things in life don't come easy and Im here for the long run.
+              <br />
+              What you will find find here are projects that I’ve done through
+              my years in college, I’ve implemented many technologies like HTML,
+              CSS, React.js, Java, PostgresSQL, Jenkins, Docker, Bash,
+              Kubernetes and some others.
+            </p>
+          </article>
+        </section>
+      </div>
       <main>
         <div class="flexing-container" id="projects">
           <h1>Web Development</h1>
@@ -254,6 +257,5 @@
         </div>
       </div>
     </div>
-    <script src="index.js"></script>
   </body>
 </html>

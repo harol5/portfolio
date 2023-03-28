@@ -137,13 +137,16 @@ nav a {
 
 /*----------About------------------------*/
 
-#about {
+.scroll-about {
   grid-column: 2/3;
+  margin: 10em 0;
+}
+
+#about {
   background-color: white;
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 10em 0;
   opacity: 0;
 }
 
@@ -177,7 +180,7 @@ nav a {
 }
 
 .fade-out-back {
-  animation: fade-in-front 3s ease-in-out alternate-reverse;
+  animation: fade-in-front 3s ease-in-out reverse;
 }
 
 /*------------Projects----------------*/
@@ -289,7 +292,7 @@ input[type="email"] {
 
 @media (max-width: 768px) {
   nav {
-    position: sticky;
+    /* position: sticky; */
   }
   .nav-links li {
     font-size: 2.3rem;
@@ -330,9 +333,17 @@ input[type="email"] {
     display: flex;
   }
   .nav-links {
-    display: none;
+    display: flex;
+    position: absolute;
+    left: 100%;
+    top: 90%;
+    width: 100%;
+    height: 100vh;
     flex-direction: column;
     align-self: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.4s;
   }
   .nav-links li {
     width: 100%;
@@ -342,12 +353,16 @@ input[type="email"] {
     padding-bottom: 0.5em;
   }
   .nav-links.active {
-    display: flex;
+    /* display: flex; */
+    opacity: 1;
+    background-color: rgb(245, 245, 245);
+    transform: scale(1);
+    left: 0;
   }
   /*---------Hero---------*/
   #hero {
     /* display: block; */
-    height: 195rem;
+    height: 210rem;
     gap: 6rem;
     text-align: center;
     align-content: center;
@@ -374,8 +389,10 @@ input[type="email"] {
     padding: 0 5rem;
   }
   /*----------About----------*/
-  #about {
+  .scroll-about {
     margin: 0;
+  }
+  #about {
     flex-direction: column;
   }
   #about div {

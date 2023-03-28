@@ -13,8 +13,8 @@ $(document).ready(() => {
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navLinks = document.getElementsByClassName("nav-links")[0];
 toggleButton.addEventListener("click", (e) => {
-  console.log(e);
   navLinks.classList.toggle("active");
+  navLinks.classList.add("show-fade-in");
 });
 
 const navBar = document.querySelector(".nav-bar");
@@ -26,6 +26,7 @@ window.addEventListener("scroll", () => {
     navBar.classList.remove("nav-scroll");
   }
 });
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
     about.classList.add("fade-in-front");
