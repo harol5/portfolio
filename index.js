@@ -8,6 +8,9 @@ $(document).ready(() => {
   $("#myBtn3").click(() => {
     $("#myModal3").modal({ backdrop: true });
   });
+  $("#myBtn4").click(() => {
+    $("#myModal4").modal({ backdrop: true });
+  });
 });
 
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
