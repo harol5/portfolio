@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" initial-scale="1" />
     <title>Portfolio</title>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="index.js" type="module" async></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./index.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Comfortaa"
@@ -88,12 +88,12 @@
           <h1>Web Development</h1>
           <div class="card">
             <button id="myBtn">
-              <img src="./img/jazz-corner.png" />
+              <img src="./img/davidici.png" />
             </button>
           </div>
           <div class="card">
             <button id="myBtn2">
-              <img src="./img/planetarium.png" />
+              <img src="./img/davidici.png" />
             </button>
           </div>
           <div class="card">
@@ -103,7 +103,12 @@
           </div>
           <div class="card">
             <button id="myBtn4">
-              <img src="./img/davidici.png" />
+              <img src="./img/jazz-corner.png" />
+            </button>
+          </div>
+          <div class="card">
+            <button id="myBtn5">
+              <img src="./img/planetarium.png" />
             </button>
           </div>
         </div>
@@ -138,164 +143,215 @@
           </form>
         </div>
       </section>
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">
-                &times;
-              </button>
-              <h4 class="modal-title">Jazz' Corner</h4>
-            </div>
-            <div class="modal-body">
-              <p>
-                This web app intends to showcase music, shows and places related
-                to jazz specifically in NYC. The website started as simple
-                static site but I decided to rebuild it and use some modern
-                technologies such as React.js, Axios, Express.js, Bootstrap,
-                Heroku and APIs for dynamic data. The APIs I used for this web
-                app were, Spotify Web and Yelp. This project brought to me new
-                challenges but I learned a lot from it and gave me the
-                opportunity to implement React. this is version 0.0.1 and Im
-                looking forward to implementing new features that I already have
-                in mind that for sure will increase my skills in different areas
-                of web development.
-              </p>
-              <a href="https://jazzc.herokuapp.com/" target="_blank"
-                >Go to website</a
-              >
-              <a href="https://github.com/harol5/jazz-corner" target="_blank"
-                >Github Repository</a
-              >
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-default"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+    </div>
+    <div class="modal fade davidici" role="dialog">
+      <div class="modal-dialog modal-xl">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Davidici</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              I joined the DaviDici team in October 2023 as a full-stack
+              developer, the main website was developed with Wordpress but
+              current features are based on custom php, javascript and css
+              files.
+            </p>
+            <img
+              class="davidici screenshot"
+              src="/img/davidici-repo.png"
+              alt="screenshot of davidici repo"
+            />
+            <h5>Features developed</h5>
+            <h6>Price list</h6>
+            <p>
+              A list of products with details. all products are divided into
+              collections and each collection into types of products (vanities,
+              side units, wall units, add ons). filters allow the user to search
+              for specific products according to their characteristics.
+            </p>
+            <img
+              class="davidici screenshot"
+              src="/img/davidici-price-list-main.png"
+              alt="screenshot of davidici repo"
+            />
+            <img
+              class="davidici screenshot"
+              src="/img/davidici-pricelist-elora.png"
+              alt="screenshot of davidici repo"
+            />
+            <a href="https://www.davidici.com/" target="_blank"
+              >Go to website</a
+            >
+            <a href="https://github.com/harol5/DaviDici" target="_blank"
+              >Github Repository</a
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="myModal2" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">
-                &times;
-              </button>
-              <h4 class="modal-title">Planetarium</h4>
-            </div>
-            <div class="modal-body">
-              <p>
-                Planetarium is a web app where users can create and save planets
-                and moons into a database. Each planet and moon will be
-                associated with the user that created it and each user will have
-                their own account which is required for making use of the app. I
-                built this app to put in practice some technologies that I
-                learned over the past months such as Spring boot, Jenkins,
-                Docker, Kubernetes, Prometheus, Grafana, and Google Cloud
-                Platform. The web app has an API, CI/CD pipeline, Observation
-                tools (Prometheus, Grafana) and a Kubernetes cluster. At the
-                moment the back-end and deployment are functional, Im currently
-                working in the front-end using React.js. please check my GitHub
-                repository for more details.
-              </p>
-              <a href="https://github.com/harol5/planetarium" target="_blank"
-                >Github Repository</a
-              >
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-default"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+    </div>
+    <div class="modal fade davidici-portal" role="dialog">
+      <div class="modal-dialog modal-xl">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Davidici</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              I joined the DaviDici team in October 2023 as a full-stack
+              developer, the main website was developed with Wordpress but
+              current festures are based on custom php, javascript and css
+              files.
+            </p>
+            <h5>Features developed</h5>
+            <p>price list</p>
+            <a href="https://www.davidici.com/" target="_blank"
+              >Go to website</a
+            >
+            <a href="https://github.com/harol5/DaviDici" target="_blank"
+              >Github Repository</a
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="myModal3" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">
-                &times;
-              </button>
-              <h4 class="modal-title">Notes</h4>
-            </div>
-            <div class="modal-body">
-              <p>
-                Notes is a web application where users can create notes such as
-                reminders or to-dos. Users are required to create an account and
-                verify it using a valid email. Users can either delete, edit and
-                mark as completed any note. The technologies I used to build
-                this application were React, Express.js, PostgreSQL and Heroku.
-              </p>
-              <a
-                href="https://my-simple-notes-v1-2fcafdc02472.herokuapp.com/"
-                target="_blank"
-                >Go to website</a
-              >
-              <a href="https://github.com/harol5/notes-webApp" target="_blank"
-                >Github Repository</a
-              >
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-default"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+    </div>
+    <div class="modal fade notes" role="dialog">
+      <div class="modal-dialog modal-xl">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Notes</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Notes is a web application where users can create notes such as
+              reminders or to-dos. Users are required to create an account and
+              verify it using a valid email. Users can either delete, edit and
+              mark as completed any note. The technologies I used to build this
+              application were React, Express.js, PostgreSQL and Heroku.
+            </p>
+            <a
+              href="https://my-simple-notes-v1-2fcafdc02472.herokuapp.com/"
+              target="_blank"
+              >Go to website</a
+            >
+            <a href="https://github.com/harol5/notes-webApp" target="_blank"
+              >Github Repository</a
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="myModal4" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">
-                &times;
-              </button>
-              <h4 class="modal-title">Davidici</h4>
-            </div>
-            <div class="modal-body">
-              <p>
-                Davidici is a start-up company that sells high-end vanities to
-                retails. Since I joined the team in October 2023 as their web
-                developer, I have made several contributions such as creating an
-                interactive price list where users can filter out and add
-                products to the shopping cart, develop a support page where user
-                can request help from our support team and a track order page.
-              </p>
-              <a href="https://www.davidici.com/" target="_blank"
-                >Go to website</a
-              >
-              <a href="https://github.com/harol5/DaviDici" target="_blank"
-                >Github Repository</a
-              >
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-default"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+    </div>
+    <div class="modal fade jazz-corner" role="dialog">
+      <div class="modal-dialog modal-xl modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Jazz' Corner</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              This web app intends to showcase music, shows and places related
+              to jazz in NYC. Technologies such as React, Express.js, Bootstrap,
+              Heroku and APIs comfomed the tech stack and Spotify Web and Yelp
+              APIs provide dynamic data.
+            </p>
+            <img
+              class="jazz-corner screenshot playlist-page"
+              src="/img/jazz-corner-playlist-sample.png"
+              alt="screenshot of playlists page"
+            />
+            <p>
+              In order to get data from spotify, users must have an account.
+              this allows the app to have access to some action such as saving
+              new song to a user's playlists
+            </p>
+            <img
+              class="jazz-corner-screenshot podcast-page"
+              src="/img/jazz-corner-podcasts-sample.png"
+              alt="screenshot of playlists page"
+            />
+            <a href="https://jazzc.herokuapp.com/" target="_blank"
+              >Go to website</a
+            >
+            <a href="https://github.com/harol5/jazz-corner" target="_blank"
+              >Github Repository</a
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade planetarium" role="dialog">
+      <div class="modal-dialog modal-xl">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Planetarium</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Planetarium is a web app where users can create and save planets
+              and moons into a database. Each planet and moon will be associated
+              with the user that created it and each user will have their own
+              account which is required for making use of the app. I built this
+              app to put in practice some technologies that I learned over the
+              past months such as Spring boot, Jenkins, Docker, Kubernetes,
+              Prometheus, Grafana, and Google Cloud Platform. The web app has an
+              API, CI/CD pipeline, Observation tools (Prometheus, Grafana) and a
+              Kubernetes cluster. At the moment the back-end and deployment are
+              functional, Im currently working in the front-end using React.js.
+              please check my GitHub repository for more details.
+            </p>
+            <a href="https://github.com/harol5/planetarium" target="_blank"
+              >Github Repository</a
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>

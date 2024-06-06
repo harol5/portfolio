@@ -1,16 +1,39 @@
 $(document).ready(() => {
-  $("#myBtn").click(() => {
-    $("#myModal").modal({ backdrop: true });
-  });
-  $("#myBtn2").click(() => {
-    $("#myModal2").modal({ backdrop: true });
-  });
-  $("#myBtn3").click(() => {
-    $("#myModal3").modal({ backdrop: true });
-  });
-  $("#myBtn4").click(() => {
-    $("#myModal4").modal({ backdrop: true });
-  });
+  const davidiciModal = new bootstrap.Modal(
+    document.querySelector(".davidici")
+  );
+  const davidiciShowModalButton = document.querySelector("#myBtn");
+  davidiciShowModalButton.addEventListener("click", (e) =>
+    davidiciModal.show()
+  );
+
+  const davidiciPortalModel = new bootstrap.Modal(
+    document.querySelector(".davidici-portal")
+  );
+  const davidiciPortalShowModalButton = document.querySelector("#myBtn2");
+  davidiciPortalShowModalButton.addEventListener("click", (e) =>
+    davidiciPortalModel.show()
+  );
+
+  const notesModal = new bootstrap.Modal(document.querySelector(".notes"));
+  const notesShowModalButton = document.querySelector("#myBtn3");
+  notesShowModalButton.addEventListener("click", (e) => notesModal.show());
+
+  const jazzCornerModal = new bootstrap.Modal(
+    document.querySelector(".jazz-corner")
+  );
+  const jazzCornerShowModalButton = document.querySelector("#myBtn4");
+  jazzCornerShowModalButton.addEventListener("click", (e) =>
+    jazzCornerModal.show()
+  );
+
+  const planetariumModal = new bootstrap.Modal(
+    document.querySelector(".planetarium")
+  );
+  const planetariumShowModalButton = document.querySelector("#myBtn5");
+  planetariumShowModalButton.addEventListener("click", (e) =>
+    planetariumModal.show()
+  );
 });
 
 const toggleButton = document.getElementsByClassName("toggle-button")[0];

@@ -1,0 +1,3 @@
+- add section where i will add skills (java -> frameworks, php -> frameworks, etc...)
+
+- improve details about each project (Re-style )
