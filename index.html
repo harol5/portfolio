@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="index.js" type="module" async></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./index.css" />
     <link
@@ -93,7 +93,7 @@
           </div>
           <div class="card">
             <button id="myBtn2">
-              <img src="./img/davidici.png" />
+              <img src="./img/davidici-portal.png" />
             </button>
           </div>
           <div class="card">
@@ -147,40 +147,82 @@
     <div class="modal fade davidici" role="dialog">
       <div class="modal-dialog modal-xl">
         <!-- Modal content-->
-        <div class="modal-content">
+        <div class="modal-content p-5">
           <div class="modal-header">
             <h4 class="modal-title">Davidici</h4>
           </div>
           <div class="modal-body">
-            <p>
-              I joined the DaviDici team in October 2023 as a full-stack
-              developer, the main website was developed with Wordpress but
-              current features are based on custom php, javascript and css
-              files.
-            </p>
-            <img
-              class="davidici screenshot"
-              src="/img/davidici-repo.png"
-              alt="screenshot of davidici repo"
-            />
+            <div class="media-wrapper">
+              <p>
+                I joined the DaviDici team in October 2023 as a full-stack
+                developer, the main website was developed with Wordpress but
+                current features are based on custom php, javascript and css
+                files.
+              </p>
+              <a href="https://www.davidici.com/" target="_blank"
+                >Go to website</a
+              >
+              <a href="https://github.com/harol5/DaviDici" target="_blank"
+                >Github Repository</a
+              >
+              <img
+                class="davidici screenshot"
+                src="/img/davidici-repo.png"
+                alt="screenshot of davidici repo"
+              />
+            </div>
             <h5>Features developed</h5>
-            <h6>Price list</h6>
-            <p>
-              A list of products with details. all products are divided into
-              collections and each collection into types of products (vanities,
-              side units, wall units, add ons). filters allow the user to search
-              for specific products according to their characteristics.
-            </p>
-            <img
-              class="davidici screenshot"
-              src="/img/davidici-price-list-main.png"
-              alt="screenshot of davidici repo"
-            />
-            <img
-              class="davidici screenshot"
-              src="/img/davidici-pricelist-elora.png"
-              alt="screenshot of davidici repo"
-            />
+            <div class="media-wrapper">
+              <h6>- Price list -</h6>
+              <p>
+                A list of products with details. all products are divided into
+                collections and each collection into types of products
+                (vanities, side units, wall units, add-ons).
+              </p>
+              <img
+                class="davidici screenshot"
+                src="/img/davidici-price-list-main.png"
+                alt="screenshot of davidici repo"
+              />
+              <p>
+                Filters allow the user to search for specific products according
+                to their characteristics. it also calculates the size of the
+                washbasin depending on the size of the vanity.
+              </p>
+              <img
+                class="davidici screenshot"
+                src="/img/davidici-pricelist-elora.png"
+                alt="screenshot of davidici repo"
+              />
+            </div>
+            <div class="media-wrapper">
+              <h6>- Shopping cart -</h6>
+              <p>
+                Users can add products to the shopping cart where they can
+                either create an order (davidici portal) or print it.
+              </p>
+              <div id="player-davidici"></div>
+            </div>
+            <div class="media-wrapper">
+              <h6>- Support -</h6>
+              <p>
+                The support page provides a convenient way to communicate with
+                our customers. An email will be sent to our customer service
+                team so they can provide further assintance. Users can talk and
+                share their screens. 
+              </p>
+              <div id="player-davidici-support"></div>
+            </div>
+            <div class="media-wrapper">
+              <h6>- track-pod api integration -</h6>
+              <p>
+                Users can check their order's delivery status using our
+                track-pod integration. Track-pod is a delivery management system
+                that provides a RESTful API which comes very handy when creating
+                user interfaces.
+              </p>
+              <div id="player-davidici-track-pod"></div>
+            </div>
             <a href="https://www.davidici.com/" target="_blank"
               >Go to website</a
             >
@@ -203,23 +245,28 @@
     <div class="modal fade davidici-portal" role="dialog">
       <div class="modal-dialog modal-xl">
         <!-- Modal content-->
-        <div class="modal-content">
+        <div class="modal-content p-5">
           <div class="modal-header">
             <h4 class="modal-title">Davidici</h4>
           </div>
           <div class="modal-body">
             <p>
-              I joined the DaviDici team in October 2023 as a full-stack
-              developer, the main website was developed with Wordpress but
-              current festures are based on custom php, javascript and css
-              files.
+              Davidici portal is a web application that allow users to manage
+              their orders previously created on the price list. Users must have
+              an active account in order to login to the portal.
             </p>
-            <h5>Features developed</h5>
-            <p>price list</p>
-            <a href="https://www.davidici.com/" target="_blank"
+            <img
+              class="davidici-portal screenshot"
+              src="/img/davidici-portal-login.png"
+              alt="screenshot of davidici portal login page"
+            />
+            <p>watch video below for a quick tour.</p>
+            <a href="https://portal.davidici.com/" target="_blank"
               >Go to website</a
             >
-            <a href="https://github.com/harol5/DaviDici" target="_blank"
+            <a
+              href="https://github.com/harol5/DaviDici-seven-portal"
+              target="_blank"
               >Github Repository</a
             >
           </div>
@@ -238,7 +285,7 @@
     <div class="modal fade notes" role="dialog">
       <div class="modal-dialog modal-xl">
         <!-- Modal content-->
-        <div class="modal-content">
+        <div class="modal-content p-5">
           <div class="modal-header">
             <h4 class="modal-title">Notes</h4>
           </div>
@@ -250,6 +297,12 @@
               mark as completed any note. The technologies I used to build this
               application were React, Express.js, PostgreSQL and Heroku.
             </p>
+            <img
+              class="davidici-portal screenshot"
+              src="/img/notes-login.png"
+              alt="screenshot of davidici portal login page"
+            />
+            <div id="player-notes"></div>
             <a
               href="https://my-simple-notes-v1-2fcafdc02472.herokuapp.com/"
               target="_blank"
@@ -274,7 +327,7 @@
     <div class="modal fade jazz-corner" role="dialog">
       <div class="modal-dialog modal-xl modal-lg">
         <!-- Modal content-->
-        <div class="modal-content">
+        <div class="modal-content p-5">
           <div class="modal-header">
             <h4 class="modal-title">Jazz' Corner</h4>
           </div>
@@ -322,7 +375,7 @@
     <div class="modal fade planetarium" role="dialog">
       <div class="modal-dialog modal-xl">
         <!-- Modal content-->
-        <div class="modal-content">
+        <div class="modal-content p-5">
           <div class="modal-header">
             <h4 class="modal-title">Planetarium</h4>
           </div>
@@ -356,5 +409,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js" defer></script>
   </body>
 </html>

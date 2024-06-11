@@ -11,6 +11,10 @@ h1 {
   font-family: "Comfortaa";
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   padding: 0;
   margin: 0;
@@ -93,7 +97,7 @@ nav a {
   align-items: center;
   padding: 0 6em;
   background-color: rgba(0, 0, 0, 0.181);
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   /* background-image: url(./img/hero-resized.png);
   background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: 65%;
@@ -156,7 +160,7 @@ nav a {
   margin: 2em;
 }
 #about article {
-  font-size: 1.72rem;
+  font-size: 1.2rem;
   padding: 2em 2em 2em 0;
 }
 
@@ -296,6 +300,11 @@ input[type="email"] {
 /* When moving the mouse over the submit button, add a darker green color */
 #email-submit-button:hover {
   background-color: #45a049;
+}
+
+/*----------Modals------------*/
+.media-wrapper {
+  margin: 1em 0;
 }
 
 /*----------Thanks Page------------*/
