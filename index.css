@@ -144,7 +144,7 @@ nav a {
 
 .scroll-about {
   grid-column: 2/3;
-  margin: 10em 0;
+  margin: 10em 0 0;
 }
 
 #about {
@@ -161,7 +161,8 @@ nav a {
 }
 #about article {
   font-size: 1.2rem;
-  padding: 2em 2em 2em 0;
+  padding: 2em;
+  background-color: #2c2c2c38;
 }
 
 #about img {
@@ -186,6 +187,24 @@ nav a {
 
 .fade-out-back {
   animation: fade-in-front 3s ease-in-out reverse;
+}
+
+/*----------Skills------------------------*/
+
+.skills {
+  grid-column: 2/3;
+  margin: 10em 0;
+}
+
+.skills > section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.skills > section > article {
+  font-size: 1.2rem;
+  padding: 2em 2em 2em 0;
 }
 
 /*------------Projects----------------*/
@@ -383,7 +402,7 @@ input[type="email"] {
   .nav-links li {
     width: 100%;
     text-align: center;
-    font-size: 6rem;
+    font-size: 4.4rem;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
@@ -397,7 +416,7 @@ input[type="email"] {
   /*---------Hero---------*/
   #hero {
     /* display: block; */
-    height: 210rem;
+    height: 150rem;
     gap: 6rem;
     text-align: center;
     align-content: center;
@@ -413,11 +432,11 @@ input[type="email"] {
     margin-bottom: 2rem;
   }
   .call-for-action h3 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
   }
   .call-for-action p {
-    font-size: 4.5rem;
+    font-size: 2.9rem;
   }
   #hero div {
     width: 100%;
@@ -433,15 +452,14 @@ input[type="email"] {
   #about div {
     width: auto;
     margin: 5em;
-    margin-bottom: 0;
   }
   #about article {
-    font-size: 4.5rem;
+    font-size: 2.9rem;
     padding: 1em;
   }
   #about article h1 {
     text-align: center;
-    font-size: 8.2rem;
+    font-size: 6.2rem;
     margin: 0.3em 0;
   }
   #about img {
@@ -449,13 +467,32 @@ input[type="email"] {
     display: block;
     margin: auto;
   }
+  /*----------skills----------*/
+  .skills {
+    margin: 0;
+  }
+
+  .skills > section {
+    flex-direction: column;
+  }
+
+  .skills > section > article {
+    font-size: 2.9rem;
+    padding: 1em;
+  }
+  .skills > section > article h1 {
+    text-align: center;
+    font-size: 6.2rem;
+    margin: 0.3em 0;
+  }
+
   /*-------Projects--------*/
   .flexing-container {
     flex-direction: column;
   }
   .flexing-container h1 {
-    margin: 2em auto;
-    font-size: 60px;
+    margin: 3em auto;
+    font-size: 4.7rem;
   }
   .card {
     max-width: 100%;
